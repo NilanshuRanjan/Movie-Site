@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background-color: rgb(0, 0, 0); */
+    background: linear-gradient(rgb(0, 0, 0), rgb(85, 0, 0));
+    background-attachment: fixed;
+}
+
+h1 {
+    padding: 2%;
+    font-family: 'Bungee Spice', sans-serif;
+    /* font-family: 'Oswald', sans-serif; */
+}
+
+nav {
+    /* background-color: #e50914; */
+    /* border: 2px solid rgb(255, 0, 0); */
+    color: #e50914;
+    font-weight: bolder;
+    font-size: 22px;
+    padding: 1%;
+    margin-bottom: 5vh;
+    /* margin-top: 5vh; */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+nav ul li{
+    border: 2px solid transparent;
+}
+
+nav ul li:hover {
+    color: white;
+    cursor: pointer;
+    /* border: 2px solid red; */
+    box-shadow: 0px 7px 9px 2px rgb(255, 255, 255);
+    transform: scale(1.2);
+}
+
+
+.container {
+    display: grid;
+    
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    row-gap: 47px;
+
+    justify-content: space-evenly;
+    justify-items: center;
+    padding-bottom: 20px;
+}
+
+.box {
+    height: 36vh;
+    /* border: 2px solid red; */
+    width: 15vw;
+    color: white;
+    text-align: center;
+    margin: 2px;
+    transition: transform 0.3s ease-in-out;
+    
+    box-shadow: 1px 1px 23px 6px rgb(255, 0, 0);
+}
+
+.box:hover {
+    /* border: 4px solid rgb(40, 108, 255); */
+    margin: 0px;
+    transform: scale(1.08);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+a img {
+    height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .box {
+        width: 22vh;
+    }
+}
+
+/* Add styles for the search box */
+.search-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#search {
+    padding: 10px;
+    width: 70vw;
+}
+
+button {
+    padding: 10px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.box p{
+    font-size: large;
+}
